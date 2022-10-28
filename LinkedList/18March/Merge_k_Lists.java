@@ -1,5 +1,14 @@
-public class Merge_k_Lists {
+
+
+public class Merge_k_Lists extends ListNode {
     //brute force
+    public class ListNode{
+        int val;
+            ListNode next;
+            ListNode() {}
+            ListNode(int val) { this.val = val; }
+            ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+    }
     public ListNode mergeKLists(ListNode[] lists) {
         ListNode ans=null;
         for(ListNode li:lists){
